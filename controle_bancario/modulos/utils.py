@@ -1,12 +1,21 @@
 def input_int(msg, erro='Entrada inválida! Digite um número inteiro.'):
-    """_summary_
+    """Lê e valida a entrada de um número inteiro fornecido pelo usuário.
 
     Args:
-        msg (_type_): _description_
-        erro (str, optional): _description_. Defaults to 'Entrada inválida! Digite um número inteiro.'.
+        msg (str): Mensagem exibida ao solicitar a entrada do usuário.
+        erro (str, optional): Mensagem exibida quando ocorre erro de digitação.
+            Por padrão, 'Entrada inválida! Tente novamente.'.
 
     Returns:
-        _type_: _description_
+        int: Valor inteiro digitado corretamente pelo usuário.
+
+    Comportamento:
+        - Exibe uma mensagem solicitando a entrada de um valor inteiro;
+        - Caso o usuário digite algo que não seja um número, o programa:
+            º Captura a exceção ValueError;
+            º Exibe uma mensagem de erro personalizada;
+            º Repete a solicitação até uma entrada válida ser fornecida;
+        - Retorna o valor inteiro convertido.
     """
     while True:
         try:
@@ -18,14 +27,23 @@ def input_int(msg, erro='Entrada inválida! Digite um número inteiro.'):
 
 
 def input_float(msg, erro='Entrada inálida! Digite um número válido.'):
-    """_summary_
+    """Lê e valida a entrada de um número inteiro fornecido pelo usuário.
 
     Args:
-        msg (_type_): _description_
-        erro (str, optional): _description_. Defaults to 'Entrada inálida! Digite um número válido.'.
+        msg (str): Mensagem exibida ao solicitar a entrada do usuário.
+        erro (str, optional): Mensagem exibida quando ocorre erro de digitação.
+            Por padrão, 'Entrada inválida! Tente novamente.'.
 
     Returns:
-        _type_: _description_
+        float: Valor em ponto flutuante digitado corretamente pelo usuário.
+
+    Comportamento:
+        - Exibe uma mensagem solicitando a entrada de um valor inteiro;
+        - Caso o usuário digite algo que não seja um número, o programa:
+            º Captura a exceção ValueError;
+            º Exibe uma mensagem de erro personalizada;
+            º Repete a solicitação até uma entrada válida ser fornecida;
+        - Retorna o valor inteiro convertido.
     """
     while True:
         try:
