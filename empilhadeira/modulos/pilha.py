@@ -9,6 +9,7 @@ class Pilha:
         capacidade (int): Quantidade máxima de elementos que a pilha pode conter.
     """
 
+
     def __init__(self, capacidade):
         """Inicializa uma nova pilha vazia com capacidade definida.
 
@@ -18,6 +19,7 @@ class Pilha:
         self.itens = []
         self.capacidade = capacidade
 
+
     def vazia(self):
         """Verifica se a pilha está vazia.
 
@@ -26,6 +28,7 @@ class Pilha:
         """
         return len(self.itens) == 0
 
+
     def cheia(self):
         """Verifica se a pilha atingiu sua capacidade máxima.
 
@@ -33,6 +36,7 @@ class Pilha:
             bool: True se a pilha estiver cheia, False caso contrário.
         """
         return len(self.itens) == self.capacidade
+
 
     def empilhar(self, valor):
         """Adiciona um novo elemento ao topo da pilha.
@@ -46,7 +50,8 @@ class Pilha:
         if not self.cheia():
             self.itens.append(valor)
         else:
-            print("⚠️ Pilha cheia! Não foi possível empilhar o item.")
+            print("Pilha cheia! Não foi possível empilhar o item.")
+
 
     def desempilhar(self):
         """Remove e retorna o elemento do topo da pilha.
@@ -58,6 +63,7 @@ class Pilha:
             return self.itens.pop()
         return None
 
+
     def topo(self):
         """Retorna o elemento do topo da pilha sem removê-lo.
 
@@ -67,6 +73,7 @@ class Pilha:
         if not self.vazia():
             return self.itens[-1]
         return None
+
 
     def __repr__(self):
         """Retorna uma representação legível da pilha.
