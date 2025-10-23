@@ -52,7 +52,7 @@ class FilaNotas:
             print("Fila cheia! Não é possível cadastrar mais notas.")
             return
         self.itens.append({"aluno": numero_aluno, "nota": nota})
-        print(f"✅ Nota {nota:.1f} cadastrada para o aluno nº {numero_aluno}.")
+        print(f"Nota {nota:.1f} cadastrada para o aluno nº {numero_aluno}.")
 
     def desenfileirar(self):
         """Remove e retorna a nota mais antiga cadastrada (primeira da fila).
